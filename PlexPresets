@@ -1,0 +1,11 @@
+# Base movie format
+Z:\Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac]{tmdb-$id}"}.name}
+
+# Movies in HDR
+Z:\Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac, $HDR]{tmdb-$id}"}.name}
+
+# Base TV format
+Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac]{$id}").name}
+
+# TV in HDR
+Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac, $hdr]{$id}").name}

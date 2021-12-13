@@ -1,11 +1,11 @@
 # Base movie format
-Z:\Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac]{tmdb-$id}"}.name}
+Z:\Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac]{tmdb-$id}"}.name}{'.'+fn.match(/forced/)}{'.'+fn.match(/SDH/)}
 
 # Movies in HDR
-Z:\Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac, $HDR]{tmdb-$id}"}.name}
+Z:\Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac, $HDR]{tmdb-$id}"}.name}{'.'+fn.match(/forced/)}{'.'+fn.match(/SDH/)}
 
 # Base TV format
-Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac]{$id}").name}
+Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac]{$id}").name}{'.'+fn.match(/forced/)}{'.'+fn.match(/SDH/)}
 
 # TV in HDR
-Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac, $hdr]{$id}").name}
+Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac, $hdr]{$id}").name}{'.'+fn.match(/forced/)}{'.'+fn.match(/SDH/)}

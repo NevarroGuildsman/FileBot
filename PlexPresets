@@ -9,3 +9,6 @@ Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac]{$id}").name}{'.'+
 
 # TV in HDR
 Z:\TV Shows\{plex[1]}\{plex[2]}\{plex.derive(" [$vf, $vc, $ac, $hdr]{$id}").name}{'.'+fn.match(/forced/)}{'.'+fn.match(/SDH/)}
+
+# Cathy's Monster Movies
+Z:\Cathy's Monster Movies\{n.colon(' - ')} ({y})\{plex.derive{" [$vf, $vc, $ac]{tmdb-$id}"}.name}{'.'+fn.match(/forced/)}{'.'+fn.match(/SDH/)}
